@@ -1,0 +1,20 @@
+
+
+// here we use binary search
+
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+
+// traverse the array    
+     for(int i = 0 ;i<nums.length;i++){
+    // if current element is grater and equal to target return index
+        if(nums[i] >= target){
+            return i;
+        }
+     }
+
+  // if target grater then all element insert it the end of th array
+     return nums.length;
+        
+    }
+}
