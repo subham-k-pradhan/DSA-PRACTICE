@@ -1,0 +1,29 @@
+
+
+
+// time and space complexity is (O(rows*colum))
+
+class Solution {
+
+    public int[][] transpose(int[][] matrix) {
+
+        int totalRows = matrix.length;
+        int totalCols = matrix[0].length;
+
+        // Create transpose matrix
+        int[][] ans = new int[totalCols][totalRows];
+
+         // Traverse matrix
+        for (int i = 0; i < totalRows; i++) {
+
+            for (int j = 0; j < totalCols; j++) {
+
+                // Swap row and column indexes
+                ans[j][i] = matrix[i][j];
+
+            }
+        }
+
+        return ans;
+    }
+}
