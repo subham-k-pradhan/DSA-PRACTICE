@@ -1,0 +1,32 @@
+class Student {
+
+    // Attributes
+    String name;
+    int age;
+
+    // Constructor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Creating objects
+        Student s1 = new Student("Subham", 20);
+        Student s2 = new Student("Rahul", 22);
+
+        // Calling methods
+        s1.display();
+        s2.display();
+    }
+}
