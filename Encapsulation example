@@ -1,0 +1,47 @@
+
+
+class Student {
+
+    // private data members
+    private String name;
+    private int age;
+
+    // setter methods
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+
+        if(age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid Age");
+        }
+    }
+
+    // getter methods
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student();
+
+        // setting values
+        s1.setName("Subham");
+        s1.setAge(20);
+
+        // getting values
+        System.out.println("Name: " + s1.getName());
+        System.out.println("Age: " + s1.getAge());
+    }
+}
