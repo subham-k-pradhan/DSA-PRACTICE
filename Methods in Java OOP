@@ -1,0 +1,23 @@
+
+
+// Methods help organize  all the code and define object behavior. Examples  play(), run()
+
+class Student {
+
+    // Method
+    void study() {
+        System.out.println("Student is studying");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Object creation
+        Student s1 = new Student();
+
+        // Method call
+        s1.study();
+    }
+}
