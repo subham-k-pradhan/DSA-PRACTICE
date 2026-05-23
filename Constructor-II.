@@ -1,0 +1,25 @@
+class BankAccount {
+
+    String accountHolder;
+    int balance;
+
+    // Constructor
+    BankAccount(String name, int amount) {
+
+        accountHolder = name;
+        balance = amount;
+    }
+
+    void display() {
+
+        System.out.println("Account Holder: " + accountHolder);
+        System.out.println("Balance: " + balance);
+    }
+
+    public static void main(String[] args) {
+
+        BankAccount b1 = new BankAccount("Subham", 5000);
+
+        b1.display();
+    }
+}
