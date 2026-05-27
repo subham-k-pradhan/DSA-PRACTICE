@@ -1,0 +1,64 @@
+// here i used   binary search  time complexity O(logn)
+
+
+
+class Solution {
+
+    public static int findPages(int[] arr, int n, int m) {
+
+        // If students are more than books   it return -1
+        if (m > n) {
+            return -1;
+        }
+
+        int low = 0;
+        int high = 0;
+
+        // here we Find max element and total sum
+        for (int pages : arr) {
+            low = Math.max(low, pages);
+            high += pages;
+        }
+
+        int ans = -1;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            if (isPossible(arr, m, mid)) {
+                ans = mid;
+                high = mid - 1; // try smaller answer
+            } else {
+                low = mid + 1; // increase limit
+            }
+        }
+
+        return ans;
+    }
+
+    private static boolean isPossible(int[] arr, int m, int maxPages) {
+
+        int students = 1;
+        int pages = 0;
+
+        for (int book : arr) {
+
+            // allocate to current student
+            if (pages + book <= maxPages) {
+                pages += book;
+            } else {
+
+                // allocate to next student
+                students++;
+                pages = book;
+
+                if (students > m) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+}
