@@ -1,0 +1,26 @@
+# Math for DSA
+
+This folder contains important mathematical problems and concepts for DSA
+1. Count Digits
+2. Reverse a Number
+3. Palindrome Number
+4. Armstrong Number
+5. Print All Divisors
+6. Check Prime Number
+7. Prime Numbers in a Range
+8. GCD (Greatest Common Divisor)
+9. LCM (Least Common Multiple)
+10. Euclidean Algorithm
+11. Prime Factorization
+12. Sieve of Eratosthenes
+13. Factorial of a Number
+14. Trailing Zeros in Factorial
+15. Fibonacci Series
+16. Power (xⁿ)
+17. Fast Exponentiation (Binary Exponentiation)
+18. Modular Arithmetic
+19. Modular Exponentiation
+20. GCD of an Array
+
+## Language
+- Java
