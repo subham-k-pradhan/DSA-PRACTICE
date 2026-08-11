@@ -1,0 +1,46 @@
+HASHING 
+
+
+
+
+Hashing is a technique used to store and retrieve data efficiently using a key-value structure.
+
+Java Collections Used
+
+* HashMap
+* HashSet
+
+Important HashMap Methods
+map.put(key, value);
+map.get(key);
+map.containsKey(key);
+map.getOrDefault(key, 0);
+
+
+Problems  i solved using this technique********
+
+1. Frequency Count
+2. Find Duplicate Elements
+3. First Repeating Element
+4. First Non-Repeating Element
+5. Majority Element
+6. Two Sum
+7. Union of Two Arrays
+8. Intersection of Two Arrays
+9. Longest Consecutive Sequence
+10. Group Anagrams
+11. Longest Subarray with Sum K
+12. Subarray Sum Equals K
+13. Longest Substring Without Repeating Characters
+
+
+
+For frequency counting:
+map.put(num, map.getOrDefault(num, 0) + 1);
+
+
+
+
+Goal************
+
+Practice Hashing problems in Java and understand how HashMap and HashSet are used in DSA.
